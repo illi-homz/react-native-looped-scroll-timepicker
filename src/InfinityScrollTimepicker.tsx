@@ -20,6 +20,9 @@ const InfinityScrollTimepicker: React.FC<InfinityScrollTimepickerProps> = ({
   itemActiveTextStyle,
   itemStyle,
   itemActiveStyle,
+  textActiveColor,
+  textActiveScale,
+  scaleItemDuration,
   onSelect,
   onInit,
 }) => {
@@ -98,6 +101,9 @@ const InfinityScrollTimepicker: React.FC<InfinityScrollTimepickerProps> = ({
               activeTextStyle={itemActiveTextStyle}
               style={itemStyle}
               activeStyle={itemActiveStyle}
+              textActiveColor={textActiveColor}
+              textActiveScale={textActiveScale}
+              scaleItemDuration={scaleItemDuration}
             />
           );
         }}
@@ -122,6 +128,9 @@ const InfinityScrollTimepicker: React.FC<InfinityScrollTimepickerProps> = ({
               activeTextStyle={itemActiveTextStyle}
               style={itemStyle}
               activeStyle={itemActiveStyle}
+              textActiveColor={textActiveColor}
+              textActiveScale={textActiveScale}
+              scaleItemDuration={scaleItemDuration}
             />
           );
         }}

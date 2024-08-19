@@ -17,14 +17,16 @@ const TimePickerItem: React.FC<TimePickerItemProps> = ({
   activeStyle,
   textStyle,
   activeTextStyle,
+  scaleItemDuration = 100
 }) => {
   const scale = useSharedValue(1);
   const color = useSharedValue(colors.text05);
+  const noActiveColor = textStyle?.color || colors.text05
 
   useEffect(() => {
-    scale.value = withSpring(isActive ? textActiveScale : 1, { duration: 100 });
-    color.value = withTiming(isActive ? textActiveColor : colors.text05, {
-      duration: 100,
+    scale.value = withSpring(isActive ? textActiveScale : 1, { duration: scaleItemDuration });
+    color.value = withTiming(isActive ? textActiveColor : noActiveColor, {
+      duration: scaleItemDuration,
     });
   }, [isActive]);
 

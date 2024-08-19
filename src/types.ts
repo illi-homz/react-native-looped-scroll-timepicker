@@ -1,4 +1,4 @@
-import { StyleProp, ViewStyle } from 'react-native';
+import { StyleProp, TextStyle, ViewStyle } from 'react-native';
 
 export type InfinityScrollTimepickerProps = {
   itemsCount?: number;
@@ -11,8 +11,11 @@ export type InfinityScrollTimepickerProps = {
   timeFaceStyle?: StyleProp<ViewStyle>;
   itemStyle?: StyleProp<ViewStyle>;
   itemActiveStyle?: StyleProp<ViewStyle>;
-  itemTextStyle?: StyleProp<ViewStyle>;
-  itemActiveTextStyle?: StyleProp<ViewStyle>;
+  itemTextStyle?: StyleProp<TextStyle>;
+  itemActiveTextStyle?: StyleProp<TextStyle>;
+  scaleItemDuration?: number;
+  textActiveColor?: string;
+  textActiveScale?: number;
   onSelect?(time: string): void;
   onInit?(time: string): void;
 };
@@ -20,10 +23,11 @@ export type InfinityScrollTimepickerProps = {
 export type TimePickerItemProps = {
   item: any;
   isActive?: boolean;
+  scaleItemDuration?: number;
   textActiveScale?: number;
   textActiveColor?: string;
   style?: StyleProp<ViewStyle>;
   activeStyle?: StyleProp<ViewStyle>;
-  textStyle?: StyleProp<ViewStyle>;
-  activeTextStyle?: StyleProp<ViewStyle>;
+  textStyle?: StyleProp<TextStyle>;
+  activeTextStyle?: StyleProp<TextStyle>;
 };
