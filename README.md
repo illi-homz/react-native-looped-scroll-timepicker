@@ -1,6 +1,6 @@
 # react-native-infinity-scroll-timepicker
 
-<img src="https://github.com/illi-homz/demos/blob/main/react-native-infinity-scroll-timepicker.gif?raw=true" width="350">
+<img src="https://github.com/illi-homz/demos/blob/main/react-native-infinity-scroll-timepicker.gif?raw=true" height="350">
 <br>
 
 ## Installation

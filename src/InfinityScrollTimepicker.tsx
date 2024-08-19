@@ -1,11 +1,11 @@
 import React, { memo, useEffect, useMemo, useRef, useState } from 'react';
 import { View, StyleSheet } from 'react-native';
-import { InfinitySlider } from 'react-native-infinity-scroll-view';
 import TimePickerItem from './TimePickerItem';
 import { defaultHours, defaultMinutes } from './data';
-import { RenderItemValueType } from 'react-native-infinity-scroll-view/src/types';
-import { repeatArray } from './utils';
 import { InfinityScrollTimepickerProps } from './types';
+import { repeatArray } from './utils';
+import { InfinityScrollView } from 'react-native-infinity-scroll-view';
+import { RenderItemValueType } from 'react-native-infinity-scroll-view/src/types';
 
 const InfinityScrollTimepicker: React.FC<InfinityScrollTimepickerProps> = ({
   hours = defaultHours,
@@ -87,7 +87,7 @@ const InfinityScrollTimepicker: React.FC<InfinityScrollTimepickerProps> = ({
 
   return (
     <View style={[styles.container, style]}>
-      <InfinitySlider
+      <InfinityScrollView
         data={repeatedtHours}
         renderItem={({ item, index }) => {
           return (
@@ -111,7 +111,7 @@ const InfinityScrollTimepicker: React.FC<InfinityScrollTimepickerProps> = ({
         style={[styles.timeFace, timeFaceStyle]}
       />
 
-      <InfinitySlider
+      <InfinityScrollView
         data={repeatedtMinutes}
         renderItem={({ item, index }) => {
           return (
