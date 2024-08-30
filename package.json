@@ -1,5 +1,5 @@
 {
-  "name": "react-native-infinity-scroll-timepicker",
+  "name": "react-native-looped-scroll-timepicker",
   "version": "0.1.2",
   "description": "ReactNative timepicker witch infinity scrolling clockfaces",
   "main": "index.ts",
