@@ -1,26 +1,26 @@
-# react-native-infinity-scroll-timepicker
+# react-native-looped-scroll-timepicker
 
-<img src="https://github.com/illi-homz/demos/blob/main/react-native-infinity-scroll-timepicker.gif?raw=true" height="350">
+<img src="https://github.com/illi-homz/demos/blob/main/react-native-looped-scroll-timepicker.gif?raw=true" height="350">
 <br>
 
 ## Installation
 Using NPM:
 ```
-$ npm i react-native-infinity-scroll-timepicker
+$ npm i react-native-looped-scroll-timepicker
 ```
 
 Using Yarn:
 ```
-$ yarn add react-native-infinity-scroll-timepicker
+$ yarn add react-native-looped-scroll-timepicker
 ```
 
 ## Usage
 ```javascript
-import { InfinityScrollTimepicker } from 'react-native-infinity-scroll-timepicker'
+import { LoppedScrollTimepicker } from 'react-native-looped-scroll-timepicker'
 ```
 
 ```javascript
-<InfinityScrollTimepicker
+<LoppedScrollTimepicker
   onSelect={t => setTime(t)}
   onInit={t => setTime(t)}
   style={styles.picker}
@@ -30,7 +30,7 @@ import { InfinityScrollTimepicker } from 'react-native-infinity-scroll-timepicke
 ### Types
 
 ```ts
-type InfinityScrollTimepickerProps = {
+type LoppedScrollTimepickerProps = {
   itemsCount?: number;
   centerIdx?: number;
   hours?: any[];
