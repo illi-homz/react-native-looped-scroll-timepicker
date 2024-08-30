@@ -2,12 +2,12 @@ import React, { memo, useEffect, useMemo, useRef, useState } from 'react';
 import { View, StyleSheet } from 'react-native';
 import TimePickerItem from './TimePickerItem';
 import { defaultHours, defaultMinutes } from './data';
-import { InfinityScrollTimepickerProps } from './types';
+import { LoppedScrollTimepickerProps } from './types';
 import { repeatArray } from './utils';
-import { InfinityScrollView } from 'react-native-infinity-scroll-view';
-import { RenderItemValueType } from 'react-native-infinity-scroll-view/src/types';
+import { LoopedScrollView } from 'react-native-looped-scroll-view';
+import { RenderItemValueType } from 'react-native-looped-scroll-view/src/types';
 
-const InfinityScrollTimepicker: React.FC<InfinityScrollTimepickerProps> = ({
+const LoppedScrollTimepicker: React.FC<LoppedScrollTimepickerProps> = ({
   hours = defaultHours,
   minutes = defaultMinutes,
   itemsCount = 5,
@@ -90,7 +90,7 @@ const InfinityScrollTimepicker: React.FC<InfinityScrollTimepickerProps> = ({
 
   return (
     <View style={[styles.container, style]}>
-      <InfinityScrollView
+      <LoopedScrollView
         data={repeatedtHours}
         renderItem={({ item, index }) => {
           return (
@@ -117,7 +117,7 @@ const InfinityScrollTimepicker: React.FC<InfinityScrollTimepickerProps> = ({
         style={[styles.timeFace, timeFaceStyle]}
       />
 
-      <InfinityScrollView
+      <LoopedScrollView
         data={repeatedtMinutes}
         renderItem={({ item, index }) => {
           return (
@@ -147,7 +147,7 @@ const InfinityScrollTimepicker: React.FC<InfinityScrollTimepickerProps> = ({
   );
 };
 
-export default memo(InfinityScrollTimepicker);
+export default memo(LoppedScrollTimepicker);
 
 const styles = StyleSheet.create({
   container: {

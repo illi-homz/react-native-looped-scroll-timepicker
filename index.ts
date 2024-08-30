@@ -1,1 +1,1 @@
-export { default as InfinityScrollTimepicker } from './src/InfinityScrollTimepicker';
+export { default as LoppedScrollTimepicker } from './src/LoppedScrollTimepicker';

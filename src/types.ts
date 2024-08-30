@@ -1,6 +1,6 @@
 import { StyleProp, TextStyle, ViewStyle } from 'react-native';
 
-export type InfinityScrollTimepickerProps = {
+export type LoppedScrollTimepickerProps = {
   itemsCount?: number;
   centerIdx?: number;
   hours?: any[];

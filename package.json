@@ -1,29 +1,29 @@
 {
   "name": "react-native-looped-scroll-timepicker",
-  "version": "0.1.2",
-  "description": "ReactNative timepicker witch infinity scrolling clockfaces",
+  "version": "0.1.0",
+  "description": "ReactNative timepicker witch looped scrolling clockfaces",
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/illi-homz/react-native-infinity-scroll-timepicker.git"
+    "url": "git+ssh://git@github.com/illi-homz/react-native-looped-scroll-timepicker.git"
   },
   "dependencies": {
-    "react-native-infinity-scroll-view": "^0.1.4"
+    "react-native-looped-scroll-view": "^0.1.4"
   },
   "keywords": [
     "react",
     "native",
-    "infinity",
+    "looped",
     "scroll",
     "timepicker"
   ],
   "author": "gomzales",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/illi-homz/react-native-infinity-scroll-timepicker/issues"
+    "url": "https://github.com/illi-homz/react-native-looped-scroll-timepicker/issues"
   },
-  "homepage": "https://github.com/illi-homz/react-native-infinity-scroll-timepicker#readme"
+  "homepage": "https://github.com/illi-homz/react-native-looped-scroll-timepicker#readme"
 }
